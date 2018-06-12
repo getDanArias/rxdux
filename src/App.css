@@ -1,0 +1,30 @@
+.App {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+
+  height: 100%;
+  width: 100%;
+}
+
+.ListPanel {
+  width: 50%;
+  margin-right: 10px;
+}
+
+.DataPanel {
+  background: #3b4545;
+  width: 50%;
+  margin-left: 10px;
+  border-radius: 5px;
+  color: #68ddf0;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+pre {
+  padding: 10px;
+  text-align: left;
+  margin: 0;
+}

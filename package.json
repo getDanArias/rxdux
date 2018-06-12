@@ -1,0 +1,28 @@
+{
+  "name": "rxdux",
+  "version": "1.0.0",
+  "homepage": "https://getdanarias.github.io/rxdux",
+  "description": "Testing a Reactive Streams to Handle State Management like Redux but without Redux.",
+  "keywords": [
+    "redux",
+    "rxjs",
+    "react"
+  ],
+  "main": "src/index.js",
+  "dependencies": {
+    "gh-pages": "1.2.0",
+    "react": "16.3.2",
+    "react-dom": "16.3.2",
+    "react-scripts": "1.1.4",
+    "rxjs": "6.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

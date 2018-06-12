@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+
+  font-family: sans-serif;
+  background: #789ea4;
+  padding: 25px;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

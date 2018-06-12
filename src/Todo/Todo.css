@@ -1,0 +1,149 @@
+:root {
+  --list-bg-color: #3b4545;
+  --option-diameter: 35px;
+  --element-height: 35px;
+}
+
+input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 5px;
+  margin: 0;
+  padding: 0 15px;
+  font-size: 15px;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--list-bg-color);
+  border-radius: 5px;
+  color: #333333;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+
+.add-todo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  height: var(--element-height);
+  width: 100%;
+
+  margin-bottom: 15px;
+}
+
+.add-todo-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  height: var(--element-height);
+  width: 80px;
+
+  margin-left: 15px;
+
+  border-radius: 5px;
+
+  font-size: 15px;
+  background: #b9e362;
+  color: var(--list-bg-color);
+
+  text-transform: uppercase;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+.add-todo-input {
+  background: white;
+  height: var(--element-height);
+  flex: 1;
+}
+
+.todo-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 30px;
+  width: 100%;
+
+  margin: 15px 0;
+}
+
+.status-orb {
+  height: var(--option-diameter);
+  width: var(--option-diameter);
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.status-orb[data-state="done"] {
+  background: #37ae33;
+}
+
+.status-orb[data-state="undone"] {
+  background: #f34848;
+}
+
+.edit-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  height: var(--option-diameter);
+  width: var(--option-diameter);
+  border-radius: 50%;
+
+  margin-right: 15px;
+
+  font-size: 15px;
+  color: #2c3333;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+div.edit-button[data-state="edit"] {
+  background: #7c9191;
+}
+
+div.edit-button[data-state="save"] {
+  background: lightgreen;
+}
+
+.todo-input {
+  background: white;
+  height: 30px;
+  flex: 1;
+
+  border-radius: 5px;
+  padding: 0 7px;
+
+  font-size: 15px;
+}
+
+input.todo-input[data-state="edit"] {
+  background: var(--list-bg-color);
+  border: none;
+  color: white;
+}
+
+input.todo-input[data-state="save"] {
+  background: white;
+  border: none;
+  color: #012606;
+}
